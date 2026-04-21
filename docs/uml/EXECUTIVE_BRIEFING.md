@@ -56,17 +56,20 @@
 
 ## 深入閱讀指引
 
-| 想了解... | 讀這份 | 對應上方區塊 |
-|:---|:---|:---|
-| 所有概念的定義與關係 | [00_domain_model.md](00_domain_model.md) | 1 |
-| 問題進入的分流邏輯 | [01_entry_decision.md](01_entry_decision.md) | 3 |
-| 完整閉環主流程 | [02_main_flow.md](02_main_flow.md) | 2 |
-| Step 0 問題定界細節 | [03_step0_scoping.md](03_step0_scoping.md) | 2 |
-| Px 搜尋與三種找不到的情境 | [04_px_search.md](04_px_search.md) | 2, 3 |
-| 多矛盾瓶頸 vs. SIM 策略 | [05_multi_tc_strategy.md](05_multi_tc_strategy.md) | 2, 3 |
-| SIM 迭代與收斂規則 | [06_sim_iteration.md](06_sim_iteration.md) | 2, 3 |
-| 矛盾迴圈的診斷與打破 | [07_loop_diagnosis.md](07_loop_diagnosis.md) | 3 |
-| 4D 複雜度評分（Patch vs. Evolution） | [08_complexity_check.md](08_complexity_check.md) | 3 |
-| 停止 vs. 繼續的決策框架 | [09_stop_continue.md](09_stop_continue.md) | 4 |
-| 問題全生命週期狀態機 | [10_problem_lifecycle.md](10_problem_lifecycle.md) | 2, 3, 4 |
-| 知識庫注入點與 Token 策略 | [11_kb_integration.md](11_kb_integration.md) | 2 |
+
+| 想了解...                        | 讀這份                                                | 對應上方區塊  |
+| ----------------------------- | -------------------------------------------------- | ------- |
+| 所有概念的定義與關係                    | [00_domain_model.md](00_domain_model.md)           | 1       |
+| 問題進入的分流邏輯                     | [01_entry_decision.md](01_entry_decision.md)       | 3       |
+| 完整閉環主流程                       | [02_main_flow.md](02_main_flow.md)                 | 2       |
+| Step 0 問題定界細節                 | [03_step0_scoping.md](03_step0_scoping.md)         | 2       |
+| Px 搜尋與三種找不到的情境                | [04_px_search.md](04_px_search.md)                 | 2, 3    |
+| 多矛盾瓶頸 vs. SIM 策略              | [05_multi_tc_strategy.md](05_multi_tc_strategy.md) | 2, 3    |
+| SIM 迭代與收斂規則                   | [06_sim_iteration.md](06_sim_iteration.md)         | 2, 3    |
+| 矛盾迴圈的診斷與打破                    | [07_loop_diagnosis.md](07_loop_diagnosis.md)       | 3       |
+| 4D 複雜度評分（Patch vs. Evolution） | [08_complexity_check.md](08_complexity_check.md)   | 3       |
+| 停止 vs. 繼續的決策框架                | [09_stop_continue.md](09_stop_continue.md)         | 4       |
+| 問題全生命週期狀態機                    | [10_problem_lifecycle.md](10_problem_lifecycle.md) | 2, 3, 4 |
+| 知識庫注入點與 Token 策略              | [11_kb_integration.md](11_kb_integration.md)       | 2       |
+
+
