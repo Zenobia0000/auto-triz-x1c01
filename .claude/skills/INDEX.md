@@ -19,9 +19,9 @@
 | :--- | :---- | :--- | :--- |
 | 入口儀表板 | **tr-router** | TR 等級總覽 + 路由 | `/tr` |
 | Gate Review | **tr-gate** | 通用 gate review（TR1-TR10） | `/tr-gate TRn` |
-| FEA 輔助 | **tr-fea-assist** | FEA 設定、材料卡、結果判讀 | `/tr-fea` (Phase 2) |
-| 測試報告 | **tr-test-report** | V-test + DVP&R 報告產生 | `/tr-test` (Phase 3) |
-| DFM 審查 | **tr-dfm** | DFM/DFA checklist + BOM 驗證 | `/tr-dfm` (Phase 4) |
+| FEA 輔助 | **tr-fea-assist** | FEA 設定、材料卡、結果判讀 | `/tr-fea` |
+| 測試報告 | **tr-test-report** | V-test + DVP&R 報告產生 | `/tr-test` |
+| DFM 審查 | **tr-dfm** | DFM/DFA checklist + BOM 驗證 | `/tr-dfm` |
 
 ---
 

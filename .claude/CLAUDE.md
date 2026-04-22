@@ -47,9 +47,9 @@ TR1-TR10 工程執行追蹤，從 TRIZ 概念凍結 (TR0) 銜接到量產釋放 
 | :--- | :--- | :--------- |
 | `/tr` | TR 入口，儀表板 + 路由 | tr-router |
 | `/tr-gate TRn` | Gate Review（TR1-TR10） | tr-gate |
-| `/tr-fea WI-nn` | FEA 設定輔助 | tr-fea-assist (Phase 2) |
-| `/tr-test Vn` | 測試報告產生 | tr-test-report (Phase 3) |
-| `/tr-dfm subsystem` | DFM/DFA 審查 | tr-dfm (Phase 4) |
+| `/tr-fea WI-nn` | FEA 設定輔助 | tr-fea-assist |
+| `/tr-test Vn` | 測試報告產生 | tr-test-report |
+| `/tr-dfm subsystem` | DFM/DFA 審查 | tr-dfm |
 
 ### 完整開發流程
 
