@@ -13,6 +13,7 @@
 | `/triz-model` | Step 1: 功能建模 (FA+SF) | triz-model |
 | `/triz-solve` | Step 2+3: TC/PC/SF 解題 | triz-contradict |
 | `/triz-verify` | Step 4: 驗證 + 下游交付 | triz-verify |
+| `/triz-wi` | Step 5: 從 TRIZ 概念產出生成工程作業指導書 (WI) 體系 | triz-wi |
 | `/triz-status` | 查看當前 TRIZ session 狀態 | (直接讀取 state) |
 
 ### 流程概覽
@@ -22,7 +23,7 @@
   │
   ├─ 有明確矛盾 → /triz-solve (TC 路徑)
   ├─ 功能缺失無副作用 → /triz-solve --sf-only
-  ├─ 問題症狀 → /triz-scope → /triz-model → /triz-solve → /triz-verify
+  ├─ 問題症狀 → /triz-scope → /triz-model → /triz-solve → /triz-verify → /triz-wi
   └─ 無法判斷 → 引導式問答
 ```
 

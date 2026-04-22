@@ -9,6 +9,7 @@
 | Step 1 | **triz-model** | 功能分析 + SF 診斷 + TC 造句 | `/triz-model` |
 | Step 2+3 | **triz-contradict** | TC/PC/SF 解題管線（含 KB 注入） | `/triz-solve` |
 | Step 4 | **triz-verify** | 驗證 + 複雜度判定 + 下游交付 | `/triz-verify` |
+| Step 5 | **triz-wi** | TRIZ 概念產出 → 工程作業指導書 (WI) 體系 | `/triz-wi` |
 
 ## 知識庫注入策略
 

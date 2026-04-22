@@ -1,10 +1,10 @@
 {
-  "session_id": "2026-04-17-1800-ebike-drive-unit",
-  "created_at": "2026-04-17T18:00:00+08:00",
-  "current_step": "step3",
+  "session_id": "2026-04-21-ebike-drive-unit-v2",
+  "created_at": "2026-04-21T10:00:00+08:00",
+  "current_step": "step4",
   "path": "multi-tc",
   "problem_description": "發展 e-Bike 用 mid-mounted drive unit (coaxial structure)，含 gearbox、motor、drive board、pedaling shaft (torque+angle sensing)。目標：小型(OD111mm/axial92mm)、輕量(2500g)、低噪(對標TQ HPR50)、高扭力(peak 125Nm/continuous 100Nm)。減速比 1:30~1:35，馬達最大扭力 5Nm，最高轉速 100rpm。殼體 AZ91D，齒輪箱 PEEK/PA66，齒輪箱型式可為多級行星齒輪/諧波齒輪/擺線齒輪。",
-  "report_file": ".claude/context/triz/session-2026-04-17-1800-ebike-drive-unit.md",
+  "report_file": ".claude/context/triz/session-2026-04-21-ebike-drive-unit-v2.md",
   "specs": {
     "max_od_mm": 111,
     "axial_length_mm": 92,
@@ -169,25 +169,75 @@
     "completed": true,
     "px_separation_verified": true,
     "px_results": {
-      "TC1": "Pass — 空間分離：氣隙高磁通(5Nm) + 薄軛(Ø65mm)",
-      "TC3": "Pass — 整體與部分分離：低嚙合級數(降噪) + 多齒同時嚙合(承載)",
-      "TC5": "Pass — 整體與部分分離：輕質基體(CF-PEEK/AZ91D) + 鋼嵌件(承載)",
-      "TC4": "Pass — 時間分離：工作期PCM吸熱 + 休息期對流散熱"
+      "TC1": "Pass — 維度轉換 radial→axial, Bg=0.8-0.9T @Ø100mm",
+      "TC2": "Pass — 整體與局部分離, 30%齒同嚙",
+      "TC3": "Pass — 整體與局部分離, CF-PEEK基體+SUS304嵌件",
+      "TC4": "Pass — 時間分離, PCM吸熱/對流散逸",
+      "TC5": "Pass — 維度轉換, 59mm << 92mm"
     },
     "verdict": "evolution",
     "complexity_scores": {
-      "structural": false,
-      "energy": false,
-      "cognitive": true,
-      "evolution_aligned": true
+      "structural": 0.25,
+      "energy": 0.50,
+      "cognitive": 0.75,
+      "evolution_aligned": 0.00,
+      "cci": 0.35
     },
-    "complexity_note": "Q1-Q3中僅Q3=是(1個<2)，Q4=是 → evolution",
+    "cci_verdict": "Weak Evolution",
+    "evidence_registry": {
+      "total_claims": 11,
+      "high_confidence": 6,
+      "medium_confidence": 4,
+      "low_confidence": 1,
+      "coverage_pct": 91,
+      "evolution_sustained": true,
+      "corrections": ["N42SH Hcj 1353→1592 kA/m", "RT52→RT55", "CoCrMo 1200→1000 MPa wrought"]
+    },
     "new_tc_detected": false,
     "observation_items": [
+      "SMC 定子鐵損 @高頻",
+      "AFM 軸向力不平衡",
       "諧波柔輪疲勞壽命 @125Nm peak",
       "AZ91D/SUS304 電偶腐蝕（需絕緣塗層）",
-      "PCM 石蠟循環穩定性 @1000+ cycles"
+      "PCM 石蠟循環穩定性 @1000+ cycles",
+      "環形 PCB EMI"
     ],
-    "deliverables": ["engineering_spec", "verification_plan"]
+    "deliverables": ["engineering_spec", "verification_plan", "evidence_registry"]
+  },
+  "step5": {
+    "completed": true,
+    "subsystems_identified": ["motor", "gear", "thermal", "structural", "electronics", "test", "procurement", "corrosion"],
+    "wi_files": [
+      "WI-01_afm_magnetic_circuit.md",
+      "WI-02_harmonic_drive_design.md",
+      "WI-03_pcm_thermal_management.md",
+      "WI-04_structural_integration_cad.md",
+      "WI-05_annular_pcb_design.md",
+      "WI-06_prototype_build_test.md",
+      "WI-07_material_procurement.md",
+      "WI-08_galvanic_corrosion_prevention.md"
+    ],
+    "icd_files": [
+      "ICD-01_motor_to_shell.md",
+      "ICD-02_gearbox_to_shell.md",
+      "ICD-03_pcb_to_endcap.md",
+      "ICD-04_shell_halves.md"
+    ],
+    "mc_files": [
+      "MC-01_ndfeb_n42sh.md",
+      "MC-02_smc_somaloy700_5p.md",
+      "MC-03_cocrmo_f1537.md",
+      "MC-04_cfpeek_30cf.md",
+      "MC-05_az91d.md",
+      "MC-06_rt55_pcm.md"
+    ],
+    "framework_files": [
+      "README.md",
+      "tr_gate_framework.md",
+      "critical_path.md",
+      "risk_register.md"
+    ],
+    "total_files": 22,
+    "output_dir": "docs/engineering/"
   }
 }
