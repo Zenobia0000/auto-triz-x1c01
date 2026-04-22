@@ -455,7 +455,7 @@ MP, KXX, {mat_id}, {k_value}
     "subsystems_identified": ["motor", "gear", "thermal", "..."],
     "wi_files": ["WI-01_motor.md", "WI-02_gear.md", "..."],
     "icd_files": ["ICD-01_motor_housing.md", "..."],
-    "mc_files": ["MC-01_NdFeB_N48SH.md", "..."],
+    "mc_files": ["MC-01_{material}.md", "..."],
     "framework_files": ["README.md", "tr_gate_framework.md", "critical_path.md", "risk_register.md"],
     "total_files": 0,
     "output_dir": "docs/engineering/"
